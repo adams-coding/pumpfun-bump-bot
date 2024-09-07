@@ -7,12 +7,12 @@ Make sure the code is understandable before you put any sol into a bot or plug i
 The purpose of a bump bot is to make your token appear on the main page of pumpfun.
 Your token gets bumped to the top of the page each time there is a buy.
 
-## Prerequisites
+> ## Prerequisites
 
 - Node.js (version 12 or higher)
 - npm (Node Package Manager)
 
-## Installation
+> ## Installation
 
 1. Install Node.js and npm:
 
@@ -21,18 +21,18 @@ Your token gets bumped to the top of the page each time there is a buy.
    - This will install both Node.js and npm
 
 2. Create a new directory for your project and navigate to it:
-   mkdir pumpportal-bot
-   cd pumpportal-bot
+   **mkdir pumpportal-bot**
+   **cd pumpportal-bot**
 
 3. Initialize a new Node.js project:
-   npm init -y
+   **npm init -y**
 
 4. Install the required dependencies:
-   npm install node-fetch
+   **npm install node-fetch**
 
 5. Create a new file named `pumpfunBumpBot.js` and copy the provided script into it or alternatively clone the github repo
 
-## Getting a PumpPortal API Key
+> ## Getting a PumpPortal API Key
 
 To use this bot, you need to obtain an API key from PumpPortal:
 
@@ -40,7 +40,7 @@ To use this bot, you need to obtain an API key from PumpPortal:
 2. Follow the instructions on the page to generate your API key
 3. Copy the generated API key and replace `"your-pumpportal-api-key-here"` in the script with your actual API key
 
-## Configuration
+> ## Configuration
 
 Before running the script, you need to configure the following variables in the `pumpfunBumpBot.js` file:
 
@@ -54,18 +54,18 @@ Before running the script, you need to configure the following variables in the 
 - `SLIPPAGE`: Slippage percentage for transactions
 - `PRIORITY_FEE`: Priority fee for transactions (gas fee)
 
-## Usage
+> ## Usage
 
 To run the bot, use the following command in your terminal:
-node pumpfunBumpBot.js
+**node pumpfunBumpBot.js**
 
 The bot will continuously perform buy and sell cycles based on the configured parameters. It will log transaction details to the console.
 
-## Disclaimer
+> ## Disclaimer
 
 Use this bot at your own risk and make sure you understand the implications of automated trading. Always research bump bots carefully. The majority of them are scams that will send your sol to someone elses address.
 
-## TIP WALLET
+> ## TIP WALLET
 
 If you find this useful, feel free to send me a tip or some of your tokens (I won't jeet unless you do).
 Solana Tip Address: 5Y7aD92AZVzwUkWCchR65By4Rb194xJkkz8MRJSD3F1
