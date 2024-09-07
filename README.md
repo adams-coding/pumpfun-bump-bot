@@ -50,7 +50,7 @@ Before running the script, you need to configure the following variables in the 
 - `TIME_BETWEEN_BUYS`: Time in milliseconds between buy transactions
 - `TIME_BEFORE_SELL`: Time in milliseconds to wait before selling
 - `TIME_AFTER_SELL` : Time in milliseconds to wait after the sell before buying again
-- `NUMBER_OF_BUYS`: Number of buy transactions before selling
+- `NUMBER_OF_BUYS`: Number of buy transactions before selling (This is per cycle. There is currently no setting for number of cycles, so just hit ctrl+c to end the script)
 - `SLIPPAGE`: Slippage percentage for transactions
 - `PRIORITY_FEE`: Priority fee for transactions (gas fee)
 
@@ -60,6 +60,11 @@ To run the bot, use the following command in your terminal:
 **node pumpfunBumpBot.js**
 
 The bot will continuously perform buy and sell cycles based on the configured parameters. It will log transaction details to the console.
+Note that when the bot sells, it sells 100% of the tokens in the wallet (for the token you are bumping). 
+I designed it this way so if there are any failed buys or even a failed sell, the next cycle will take care of it.
+The 3 time variables plus *number of buys* variable, in the configuration section give you complete control over the buy/sell cycle and its timing. 
+If you want to alternate buys and sells, just set number of buys to 1. 
+Ctrl + c to end the script, until i add in a total cycles option in the config.
 
 > ## Disclaimer
 
